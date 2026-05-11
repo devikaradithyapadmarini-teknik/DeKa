@@ -1,0 +1,74 @@
+body{
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+  margin: 0;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #111827;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+}
+
+nav ul li{
+  margin-left: 20px;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+}
+
+.hero{
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.btn{
+  background: limegreen;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.produk{
+  padding: 40px;
+  text-align: center;
+}
+
+.card{
+  background: #1e293b;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.form-container{
+  width: 300px;
+  margin: 100px auto;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input, select{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button{
+  width: 100%;
+  padding: 10px;
+  background: limegreen;
+  border: none;
+  color: white;
+  cursor: pointer;
+}

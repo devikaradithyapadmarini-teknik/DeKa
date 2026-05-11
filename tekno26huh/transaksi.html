@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Transaksi</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Booking PC</h2>
+
+  <select id="paket">
+    <option value="10000">Office PC - 10.000</option>
+    <option value="20000">Gaming PC - 20.000</option>
+    <option value="25000">Editing PC - 25.000</option>
+  </select>
+
+  <input type="number" id="jam" placeholder="Jumlah Jam">
+
+  <label>
+    <input type="checkbox" id="member">
+    Membership (Diskon 20%)
+  </label>
+
+  <label>
+    <input type="checkbox" id="booking">
+    Booking Online (+2000)
+  </label>
+
+  <label>
+    <input type="checkbox" id="delivery">
+    Delivery (+5000)
+  </label>
+
+  <button onclick="checkout()">Hitung Total</button>
+
+  <h3 id="hasil"></h3>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
