@@ -1,74 +1,142 @@
-body{
-  font-family: Arial;
-  background: #0f172a;
-  color: white;
+body {
+  font-family: Arial, sans-serif; /* Rekomendasi: Ganti ke 'Outfit' atau 'Inter' nanti */
+  background: #E0E7FF; /* Tetap pakai soft blue pilihanmu */
+  color: #1E293B;      /* Diubah dari #333 ke Slate Blue tua agar lebih menyatu dengan tema biru */
   margin: 0;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background: #111827;
+  background: #FFFFFF; /* Diubah ke putih bersih agar navbar terlihat clean */
+  box-shadow: 0 2px 4px rgba(15, 23, 42, 0.04); /* Soft shadow biar elegan */
 }
 
-nav ul{
+nav ul {
   display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-nav ul li{
+nav ul li {
   margin-left: 20px;
+  background-color: transparent; /* DIHAPUS warna birunya, biar menu nav tidak kotak-kotak kaku */
+  padding: 10px 0; /* Disesuaikan agar rapi tanpa background box */
 }
 
-nav a{
-  color: white;
+nav a {
+  color: #64748B; /* Warna abu-abu kebiruan yang soft untuk menu biasa */
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
 }
 
-.hero{
+nav a:hover {
+  color: #0A64BC; /* Berubah jadi Biru Samsung saat di-hover */
+}
+
+/* Khusus untuk menu LOGIN di navbar, kita buat bentuk tombol tersendiri agar estetik */
+nav ul li:last-child {
+  background-color: #0A64BC; /* Tombol Login pakai warna utama */
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+nav ul li:last-child a {
+  color: #FFFFFF; /* Teks login jadi putih bersih */
+}
+
+nav ul li:last-child:hover {
+  background-color: #2563EB; /* Efek hover tombol login */
+}
+
+.hero {
   text-align: center;
   padding: 100px 20px;
 }
 
-.btn{
-  background: limegreen;
+/* Memperbaiki konflik pewarnaan di tombol hero */
+.hero a.btn {
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 6px;
+  padding: 12px 30px; /* Padding disesuaikan agar proporsinya pas */
+  background: #0A64BC; /* Warna Biru Samsung */
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(10, 100, 188, 0.3); /* Efek glow biru yang soft */
+  transition: background 0.2s, transform 0.2s;
+}
+
+.hero a.btn:hover {
+  background: #2563EB;
+  transform: translateY(-1px); /* Efek naik sedikit saat di-hover, super soft */
+}
+
+/* Class .btn umum jika dipakai di tempat lain */
+.btn {
+  background: #0A64BC;
   padding: 10px 20px;
   color: white;
   text-decoration: none;
 }
 
-.produk{
+.produk {
   padding: 40px;
   text-align: center;
 }
 
-.card{
-  background: #1e293b;
-  padding: 20px;
+.card {
+  background: #FFFFFF; /* Diubah ke putih bersih agar kontras dengan background utama */
+  padding: 25px;
   margin: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08); /* Shadow super lembut, bikin card estetik */
+  border: 1px solid rgba(255, 255, 255, 0.7); /* Border tipis samar-samar */
 }
 
-.form-container{
+.form-container {
   width: 300px;
   margin: 100px auto;
-  background: #1e293b;
-  padding: 20px;
-  border-radius: 10px;
+  background: #FFFFFF; /* Diubah ke putih bersih */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.1);
 }
 
-input, select{
+input, select {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   margin: 10px 0;
+  box-sizing: border-box; /* Mencegah input bablas keluar card */
+  border: 1px solid #CBD5E1; /* Border abu-abu soft, tidak hitam kaku */
+  background: #F8FAFC; /* Background input agak mati sedikit biar clean */
+  border-radius: 6px;
+  color: #1E293B;
+  outline: none;
+  transition: border-color 0.2s;
 }
 
-button{
+input:focus, select:focus {
+  border-color: #0A64BC; /* Saat diklik, border berubah jadi biru */
+}
+
+button {
   width: 100%;
-  padding: 10px;
-  background: limegreen;
+  padding: 12px;
+  background: #0A64BC; /* Disamakan dengan warna utama */
   border: none;
   color: white;
+  font-weight: 600;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #2563EB;
 }
